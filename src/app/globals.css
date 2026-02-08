@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: var(--font-bodoni);
+  --font-sans: var(--font-montserrat);
+
+  --color-burgundy: #5D0016;
+  --color-burgundy-light: #800020;
+  --color-champagne: #F5E6D3;
+  --color-gold: #D4AF37;
+  --color-cream: #FAF9F6;
+  --color-charcoal: #2C2C2C;
+
+  --shadow-luxury: 0 10px 30px -10px rgba(93, 0, 22, 0.15);
+
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+}
+
+body {
+  font-family: var(--font-montserrat);
+  background-color: var(--color-cream);
+  color: var(--color-burgundy);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-serif);
+}
+
+/* Remove white backgrounds from JPEG icon images only */
+img[src$=".jpeg"] {
+  mix-blend-mode: multiply;
+}
