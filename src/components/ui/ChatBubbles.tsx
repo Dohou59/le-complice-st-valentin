@@ -3,32 +3,31 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const messages = [
-    {
-        id: 1,
+{
+    id: 1,
         text: "Je ne sais pas comment te le dire...",
-        sender: 'him',
-        delay: 0.5
-    },
-    {
-        id: 2,
+            sender: 'him',
+                delay: 0.2
+},
+{
+    id: 2,
         text: "Dis-moi... ❤️",
-        sender: 'her',
-        delay: 1.5
-    },
-    {
-        id: 3,
+            sender: 'her',
+                delay: 0.8
+},
+{
+    id: 3,
         text: "J'ai trouvé un complice pour le faire.",
-        sender: 'him',
-        delay: 2.8
-    },
-    {
-        id: 4,
+            sender: 'him',
+                delay: 1.6
+},
+{
+    id: 4,
         text: "🧸✨",
-        sender: 'him',
-        isEmoji: true,
-        delay: 3.5
-    }
+            sender: 'him',
+                isEmoji: true,
+                    delay: 2.2
+}
 ];
 
 export default function ChatBubbles() {
@@ -46,8 +45,8 @@ export default function ChatBubbles() {
                         stiffness: 200
                     }}
                     className={`relative p-3 rounded-2xl max-w-[85%] shadow-sm ${msg.sender === 'him'
-                            ? 'self-end bg-gradient-to-br from-[#FF1493] to-[#FF69B4] text-white rounded-br-sm'
-                            : 'self-start bg-white text-gray-700 rounded-bl-sm border border-pink-50'
+                        ? 'self-end bg-gradient-to-br from-[#FF1493] to-[#FF69B4] text-white rounded-br-sm'
+                        : 'self-start bg-white text-gray-700 rounded-bl-sm border border-pink-50'
                         } ${msg.isEmoji ? 'text-3xl bg-transparent shadow-none p-0' : ''}`}
                 >
                     {!msg.isEmoji && (
@@ -64,7 +63,7 @@ export default function ChatBubbles() {
             <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ delay: 4.5 }}
+                transition={{ delay: 2.8 }}
                 className="self-start bg-white border border-pink-50 rounded-full px-3 py-2 mt-1"
             >
                 <div className="flex gap-1">

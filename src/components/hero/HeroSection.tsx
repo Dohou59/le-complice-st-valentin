@@ -3,6 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import ChatBubbles from '@/components/ui/ChatBubbles';
+import Image from 'next/image';
 
 /**
  * HeroSection Component
@@ -11,7 +12,7 @@ import ChatBubbles from '@/components/ui/ChatBubbles';
  */
 const HeroSection = () => {
     // Mise à jour de la source avec le lien direct fonctionnel
-    const pelucheSrc = "https://i.ibb.co/W4Jjzrsx/A-premium-soft-202602080759-removebg-preview.png";
+    // Mise à jour de la source avec le lien direct fonctionnel
 
     return (
         <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-[#FFFFFF] pt-20 pb-32 lg:pb-24">
@@ -95,9 +96,12 @@ const HeroSection = () => {
                         }}
                         className="relative z-10 w-full max-w-[500px] lg:max-w-[600px]"
                     >
-                        <img
-                            src={pelucheSrc}
+                        <Image
+                            src="/images/hero-peluche.png"
                             alt="Le Complice - Peluche de Saint-Valentin"
+                            width={500}
+                            height={500}
+                            priority
                             className="w-full h-auto drop-shadow-[0_35px_35px_rgba(255,20,147,0.25)]"
                         />
                     </motion.div>
