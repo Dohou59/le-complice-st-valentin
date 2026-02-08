@@ -3,31 +3,32 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-{
-    id: 1,
+const messages = [
+    {
+        id: 1,
         text: "Je ne sais pas comment te le dire...",
-            sender: 'him',
-                delay: 0.2
-},
-{
-    id: 2,
+        sender: 'him',
+        delay: 0.2
+    },
+    {
+        id: 2,
         text: "Dis-moi... ❤️",
-            sender: 'her',
-                delay: 0.8
-},
-{
-    id: 3,
+        sender: 'her',
+        delay: 0.8
+    },
+    {
+        id: 3,
         text: "J'ai trouvé un complice pour le faire.",
-            sender: 'him',
-                delay: 1.6
-},
-{
-    id: 4,
+        sender: 'him',
+        delay: 1.6
+    },
+    {
+        id: 4,
         text: "🧸✨",
-            sender: 'him',
-                isEmoji: true,
-                    delay: 2.2
-}
+        sender: 'him',
+        isEmoji: true,
+        delay: 2.2
+    }
 ];
 
 export default function ChatBubbles() {

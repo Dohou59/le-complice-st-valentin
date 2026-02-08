@@ -2,6 +2,7 @@
 
 import React from 'react';
 import WaveDivider from '@/components/ui/WaveDivider';
+import Image from 'next/image';
 
 export default function BeneficesSection() {
     return (
@@ -31,8 +32,14 @@ export default function BeneficesSection() {
                         { t: "Le témoin", d: "Elle sera là pour décorer vos moments complices, vos soirées Netflix et vos fous rires sous la couette.", i: "/icons/Nuage.png" }
                     ].map((b, i) => (
                         <div key={i} className="group bg-white/10 p-10 rounded-[40px] border border-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300">
-                            <div className="w-20 h-20 mb-6 mx-auto flex items-center justify-center group-hover:scale-110 transition-transform">
-                                <img src={b.i} alt={b.t} className="w-full h-full object-contain" />
+                            <div className="w-20 h-20 mb-6 mx-auto flex items-center justify-center group-hover:scale-110 transition-transform relative">
+                                <Image
+                                    src={b.i}
+                                    alt={b.t}
+                                    width={80}
+                                    height={80}
+                                    className="object-contain"
+                                />
                             </div>
                             <h3 className="text-2xl font-serif font-bold mb-4 text-center">{b.t}</h3>
                             <p className="opacity-80 font-light leading-relaxed text-center group-hover:opacity-100 transition-opacity">{b.d}</p>

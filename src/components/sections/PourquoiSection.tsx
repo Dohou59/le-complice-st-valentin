@@ -3,6 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import WaveDivider from '@/components/ui/WaveDivider';
+import Image from 'next/image';
 
 const pelucheSrc = "https://i.ibb.co/W4Jjzrsx/A-premium-soft-202602080759-removebg-preview.png";
 
@@ -35,8 +36,14 @@ export default function PourquoiSection() {
                             whileHover={{ y: -10 }}
                             className="bg-white p-10 rounded-[40px] shadow-sm border border-pink-50 hover:shadow-xl hover:border-pink-200 transition-all duration-300"
                         >
-                            <div className="w-20 h-20 mb-6 mx-auto flex items-center justify-center">
-                                <img src={item.i} alt={item.t} className="w-full h-full object-contain" />
+                            <div className="w-20 h-20 mb-6 mx-auto flex items-center justify-center relative">
+                                <Image
+                                    src={item.i}
+                                    alt={item.t}
+                                    width={80}
+                                    height={80}
+                                    className="object-contain"
+                                />
                             </div>
                             <h3 className="text-2xl font-serif font-bold text-[#3C3C3C] mb-4 text-center">{item.t}</h3>
                             <p className="text-gray-500 leading-relaxed font-light text-center">{item.d}</p>
