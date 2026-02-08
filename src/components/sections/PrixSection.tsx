@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useCart } from '@/context/CartContext';
+import Image from 'next/image';
 
 /**
  * SECTION 5 : Prix et Offre - "Le Pack Sérénité"
@@ -10,7 +11,6 @@ import { useCart } from '@/context/CartContext';
  */
 const PrixSection = () => {
     const { addToCart } = useCart();
-    const pelucheSrc = "https://i.ibb.co/W4Jjzrsx/A-premium-soft-202602080759-removebg-preview.png";
 
     // État pour le compte à rebours vers le 14 Février
     const [timeLeft, setTimeLeft] = useState({
@@ -58,7 +58,7 @@ const PrixSection = () => {
                     {/* Lueur de fond panoramique */}
                     <div className="absolute w-[600px] h-[600px] bg-white/60 rounded-full blur-[100px]"></div>
 
-                    <motion.img
+                    <motion.div
                         initial={{ scale: 1.4 }} // Zoom initial
                         animate={{
                             y: [0, -10, 0],
@@ -70,10 +70,16 @@ const PrixSection = () => {
                             repeat: Infinity,
                             ease: "easeInOut"
                         }}
-                        src={pelucheSrc}
-                        alt="Le Pack Sérénité - Zoom Focus"
-                        className="w-full max-w-none relative z-10 drop-shadow-[0_40px_50px_rgba(220,20,60,0.1)] object-contain"
-                    />
+                        className="w-full max-w-none relative z-10"
+                    >
+                        <Image
+                            src="/images/hero-peluche.png"
+                            alt="Le Pack Sérénité - Zoom Focus"
+                            width={600}
+                            height={600}
+                            className="w-full h-auto drop-shadow-[0_40px_50px_rgba(220,20,60,0.1)] object-contain"
+                        />
+                    </motion.div>
 
                     {/* Badge flottant interactif */}
                     <motion.div
@@ -139,7 +145,7 @@ const PrixSection = () => {
                                 name: 'Le Pack Sérénité',
                                 price: 24.90,
                                 quantity: 1,
-                                image: pelucheSrc
+                                image: "/images/hero-peluche.png"
                             });
                         }}
                         className="w-full bg-gradient-to-r from-[#DC143C] to-[#FF1493] text-white py-4 rounded-full text-xl font-bold shadow-[0_15px_30px_rgba(220,20,60,0.25)] transition-all duration-300 mb-6"

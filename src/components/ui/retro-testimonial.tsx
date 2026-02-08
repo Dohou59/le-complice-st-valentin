@@ -334,7 +334,7 @@ const ProfileImage = ({ src, alt, ...rest }: ImageProps) => {
                 height={150}
                 loading="lazy"
                 decoding="async"
-                blurDataURL={typeof src === "string" ? src : undefined}
+                blurDataURL={undefined}
                 alt={alt || "Profile image"}
                 {...rest}
             />

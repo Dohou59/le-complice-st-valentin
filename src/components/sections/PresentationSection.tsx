@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 /**
  * REDESIGN V2 : L'Anatomie de la Tendresse
@@ -86,8 +87,14 @@ const PresentationSection = () => {
                                 transition={{ delay: idx * 0.1 }}
                                 className="group p-8 bg-[#F5F5F5] rounded-[40px] hover:bg-[#DC143C] transition-all duration-500"
                             >
-                                <div className="w-16 h-16 mb-4 flex items-center justify-center group-hover:scale-110 transition-transform">
-                                    <img src={item.icon} alt={item.label} className="w-full h-full object-contain" />
+                                <div className="w-16 h-16 mb-4 flex items-center justify-center group-hover:scale-110 transition-transform relative">
+                                    <Image
+                                        src={item.icon}
+                                        alt={item.label}
+                                        width={64}
+                                        height={64}
+                                        className="object-contain"
+                                    />
                                 </div>
                                 <h3 className="text-[10px] font-bold uppercase tracking-widest text-[#DC143C] mb-2 group-hover:text-white/70 transition-colors">
                                     {item.label}
@@ -110,14 +117,20 @@ const PresentationSection = () => {
                                 SOFT
                             </span>
 
-                            <motion.img
+                            <motion.div
                                 initial={{ scale: 0.8, opacity: 0 }}
                                 whileInView={{ scale: 1, opacity: 1 }}
                                 transition={{ duration: 1 }}
-                                src={pelucheSrc}
-                                alt="Zoom Peluche"
-                                className="w-full max-w-[450px] relative z-10 drop-shadow-2xl"
-                            />
+                                className="relative z-10 w-full max-w-[450px]"
+                            >
+                                <Image
+                                    src={pelucheSrc}
+                                    alt="Zoom Peluche"
+                                    width={800}
+                                    height={800}
+                                    className="w-full h-auto drop-shadow-2xl"
+                                />
+                            </motion.div>
 
                             {/* Tag "Safe Place" flottant */}
                             <motion.div
