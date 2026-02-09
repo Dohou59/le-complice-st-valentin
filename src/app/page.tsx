@@ -1,4 +1,5 @@
 import { FloatingHeader } from "@/components/ui/floating-header";
+import Link from 'next/link';
 import HeroSection from "@/components/hero/HeroSection";
 import PourquoiSection from "@/components/sections/PourquoiSection";
 import PresentationSection from "@/components/sections/PresentationSection";
@@ -26,6 +27,12 @@ export default function Home() {
         <p className="text-gray-400 text-[10px] tracking-widest uppercase font-bold">
           &copy; 2026 Le Complice - Emma-Alk DOHOU
         </p>
+        <Link
+          href="/presentation"
+          className="text-[10px] text-gray-300 hover:text-[#DC143C] transition-colors mt-4 inline-block border-b border-transparent hover:border-[#DC143C] pb-0.5"
+        >
+          Voir la Présentation du Projet
+        </Link>
       </footer>
     </div>
   );
