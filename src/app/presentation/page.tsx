@@ -14,6 +14,7 @@ import {
     Heart
 } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Slide = ({ children, title, active }: { children: React.ReactNode, title: string, active: boolean }) => (
     <div className={`w-full h-full flex flex-col p-8 md:p-12 transition-all duration-500 absolute top-0 left-0 ${active ? 'opacity-100 translate-x-0 pointer-events-auto z-10' : 'opacity-0 translate-x-20 pointer-events-none z-0'}`}>
