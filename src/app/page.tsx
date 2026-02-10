@@ -1,13 +1,16 @@
 import { FloatingHeader } from "@/components/ui/floating-header";
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
 import HeroSection from "@/components/hero/HeroSection";
 import PourquoiSection from "@/components/sections/PourquoiSection";
-import PresentationSection from "@/components/sections/PresentationSection";
-import BeneficesSection from "@/components/sections/BeneficesSection";
-import PrixSection from "@/components/sections/PrixSection";
-import ReassuranceSection from "@/components/sections/ReassuranceSection";
-import AvisSection from "@/components/sections/AvisSection";
-import CTAFinalSection from "@/components/sections/CTAFinalSection";
+
+// Lazy load below-the-fold sections for better FCP/LCP
+const PresentationSection = dynamic(() => import("@/components/sections/PresentationSection"));
+const BeneficesSection = dynamic(() => import("@/components/sections/BeneficesSection"));
+const PrixSection = dynamic(() => import("@/components/sections/PrixSection"));
+const ReassuranceSection = dynamic(() => import("@/components/sections/ReassuranceSection"));
+const AvisSection = dynamic(() => import("@/components/sections/AvisSection"));
+const CTAFinalSection = dynamic(() => import("@/components/sections/CTAFinalSection"));
 
 export default function Home() {
   return (

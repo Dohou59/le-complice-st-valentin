@@ -36,7 +36,14 @@ const PresentationPage = () => {
             content: (
                 <div className="flex flex-col items-center justify-center h-full text-center">
                     <div className="mb-8 p-4 bg-red-50 rounded-full">
-                        <Heart className="w-16 h-16 text-red-600 animate-pulse" />
+                        <div className="w-20 h-20 relative">
+                            <Image
+                                src="/icons/Coeur ruban.png"
+                                alt="Logo Le Complice"
+                                fill
+                                className="object-contain animate-pulse"
+                            />
+                        </div>
                     </div>
                     <h1 className="text-4xl md:text-6xl font-serif font-bold text-slate-900 mb-4">Le Complice</h1>
                     <p className="text-xl md:text-2xl text-slate-500 max-w-2xl italic">"Réinventer le cadeau de la Saint-Valentin par l'empathie et le design."</p>

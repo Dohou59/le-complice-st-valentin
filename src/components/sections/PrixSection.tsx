@@ -73,7 +73,7 @@ const PrixSection = () => {
                         className="w-full max-w-none relative z-10"
                     >
                         <Image
-                            src="/images/hero-peluche.png"
+                            src="/images/hero-peluche.webp"
                             alt="Le Pack Sérénité - Zoom Focus"
                             width={600}
                             height={600}
@@ -114,7 +114,7 @@ const PrixSection = () => {
                                     {/* Texture Felt Background */}
                                     <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/felt.png')] pointer-events-none"></div>
 
-                                    <span className="text-2xl font-black tabular-nums leading-none mb-1 bg-[url('/images/Texture_peuluche_rose_202602081344.jpeg')] bg-cover bg-center bg-clip-text text-transparent drop-shadow-sm">
+                                    <span className="text-2xl font-black tabular-nums leading-none mb-1 bg-[url('/images/Texture_peuluche_rose.webp')] bg-cover bg-center bg-clip-text text-transparent drop-shadow-sm">
                                         {String(unit.value).padStart(2, '0')}
                                     </span>
                                     <span className="text-[8px] font-bold uppercase tracking-widest text-gray-400 group-hover:text-[#DC143C] transition-colors z-10">
@@ -145,7 +145,7 @@ const PrixSection = () => {
                                 name: 'Le Pack Sérénité',
                                 price: 24.90,
                                 quantity: 1,
-                                image: "/images/hero-peluche.png"
+                                image: "/images/hero-peluche.webp"
                             });
                         }}
                         className="w-full bg-gradient-to-r from-[#DC143C] to-[#FF1493] text-white py-4 rounded-full text-xl font-bold shadow-[0_15px_30px_rgba(220,20,60,0.25)] transition-all duration-300 mb-6"

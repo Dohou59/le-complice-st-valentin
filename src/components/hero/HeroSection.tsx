@@ -97,7 +97,7 @@ const HeroSection = () => {
                         className="relative z-10 w-full max-w-[500px] lg:max-w-[600px]"
                     >
                         <Image
-                            src="/images/hero-peluche.png"
+                            src="/images/hero-peluche.webp"
                             alt="Le Complice - Peluche de Saint-Valentin"
                             width={500}
                             height={500}

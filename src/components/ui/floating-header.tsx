@@ -39,7 +39,7 @@ export function FloatingHeader() {
                 {/* Logo */}
                 <div className="hover:bg-pink-50/50 flex cursor-pointer items-center gap-2 rounded-xl px-3 py-2 duration-200 transition-all hover:scale-105">
                     <div className="w-5 h-5">
-                        <img src="/icons/Coeur ruban.png" alt="Le Complice" className="w-full h-full object-contain" />
+                        <img src="/icons/Coeur ruban.webp" alt="Le Complice" className="w-full h-full object-contain" />
                     </div>
                     <p className="text-base font-bold italic" style={{ fontFamily: 'Times New Roman, serif', letterSpacing: '0.05em' }}>
                         Le Complice

@@ -27,9 +27,9 @@ export default function BeneficesSection() {
 
                 <div className="grid lg:grid-cols-3 gap-12 text-left">
                     {[
-                        { t: "Votre remplaçant", d: "Elle garde votre place sur son oreiller ou son bureau quand vous êtes occupé. Une présence rassurante, 24h/24.", i: "/icons/Maison.png" },
-                        { t: "Un repère visuel", d: "Chaque fois qu'elle la verra, elle pensera à vous. C'est mécanique, c'est magique. C'est aussi simple que ça.", i: "/icons/Yeux.png" },
-                        { t: "Le témoin", d: "Elle sera là pour décorer vos moments complices, vos soirées Netflix et vos fous rires sous la couette.", i: "/icons/Nuage.png" }
+                        { t: "Votre remplaçant", d: "Elle garde votre place sur son oreiller ou son bureau quand vous êtes occupé. Une présence rassurante, 24h/24.", i: "/icons/Maison.webp" },
+                        { t: "Un repère visuel", d: "Chaque fois qu'elle la verra, elle pensera à vous. C'est mécanique, c'est magique. C'est aussi simple que ça.", i: "/icons/Yeux.webp" },
+                        { t: "Le témoin", d: "Elle sera là pour décorer vos moments complices, vos soirées Netflix et vos fous rires sous la couette.", i: "/icons/Nuage.webp" }
                     ].map((b, i) => (
                         <div key={i} className="group bg-white/10 p-10 rounded-[40px] border border-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300">
                             <div className="w-20 h-20 mb-6 mx-auto flex items-center justify-center group-hover:scale-110 transition-transform relative">

@@ -9,7 +9,7 @@ import Image from 'next/image';
  * Focus : Équilibre visuel, typographie éditoriale et immersion tactile.
  */
 const PresentationSection = () => {
-    const pelucheSrc = "/images/lifestyle.png";
+    const pelucheSrc = "/images/lifestyle.webp";
 
     const features = [
         {
@@ -17,28 +17,28 @@ const PresentationSection = () => {
             label: "Format Confidence",
             value: "30 cm de pur réconfort",
             description: "Une taille pensée pour s'adapter à toutes les étreintes, facile à glisser sous le bras ou sur un oreiller.",
-            icon: "/icons/Taille.png"
+            icon: "/icons/Taille.webp"
         },
         {
             id: 'matiere',
             label: "Texture Safe-Place",
             value: "Coton Premium Hypoallergénique",
             description: "Un pelage ultra-dense et soyeux qui apaise instantanément le stress d'une simple caresse.",
-            icon: "/icons/Matiere.png"
+            icon: "/icons/Matiere.webp"
         },
         {
             id: 'plus',
             label: "Finition Cœur",
             value: "Broderie Artisanale 'Love'",
             description: "Le symbole de votre message, brodé avec précision pour résister au temps et aux câlins répétés.",
-            icon: "/icons/Coeur broder.png"
+            icon: "/icons/Coeur broder.webp"
         },
         {
             id: 'role',
             label: "Présence Silencieuse",
             value: "Votre Ambassadeur 24h/24",
             description: "Elle ne demande rien, mais offre tout son soutien quand vous n'êtes pas là pour le faire.",
-            icon: "/icons/Role.png"
+            icon: "/icons/Role.webp"
         }
     ];
 

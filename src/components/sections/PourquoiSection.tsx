@@ -27,9 +27,9 @@ export default function PourquoiSection() {
 
                 <div className="grid lg:grid-cols-3 gap-8">
                     {[
-                        { t: "Zéro pression", d: "Finie l'angoisse du grand discours. La peluche s'occupe de porter toute votre tendresse sans que vous ayez à prononcer un mot.", i: "/icons/Ballon.png" },
-                        { t: "Un vrai souvenir", d: "Les fleurs, c'est joli mais ça fane. Ce Complice là, il restera dans sa chambre (et dans son cœur) très longtemps.", i: "/icons/Cadeau.jpeg" },
-                        { t: "Le geste qui parle", d: "C'est la solution parfaite pour les timides qui préfèrent les attentions concrètes aux grandes déclamations.", i: "/icons/Etreinte.jpeg" }
+                        { t: "Zéro pression", d: "Finie l'angoisse du grand discours. La peluche s'occupe de porter toute votre tendresse sans que vous ayez à prononcer un mot.", i: "/icons/Ballon.webp" },
+                        { t: "Un vrai souvenir", d: "Les fleurs, c'est joli mais ça fane. Ce Complice là, il restera dans sa chambre (et dans son cœur) très longtemps.", i: "/icons/Cadeau.webp" },
+                        { t: "Le geste qui parle", d: "C'est la solution parfaite pour les timides qui préfèrent les attentions concrètes aux grandes déclamations.", i: "/icons/Etreinte.webp" }
                     ].map((item, idx) => (
                         <motion.div
                             key={idx}
