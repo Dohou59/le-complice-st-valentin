@@ -2,7 +2,9 @@ import { FloatingHeader } from "@/components/ui/floating-header";
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import HeroSection from "@/components/hero/HeroSection";
-import PourquoiSection from "@/components/sections/PourquoiSection";
+
+// Lazy load below-the-fold sections for better FCP/LCP
+const PourquoiSection = dynamic(() => import("@/components/sections/PourquoiSection"));
 
 // Lazy load below-the-fold sections for better FCP/LCP
 const PresentationSection = dynamic(() => import("@/components/sections/PresentationSection"));

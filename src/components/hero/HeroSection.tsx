@@ -36,12 +36,7 @@ const HeroSection = () => {
 
             <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center relative z-10">
 
-                {/* Contenu textuel */}
-                <motion.div
-                    initial={{ opacity: 0, x: -30 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
+                <div
                     className="text-center lg:text-left order-1 lg:order-1"
                 >
                     <span className="inline-block py-1 px-4 rounded-full bg-pink-50 text-[#FF1493] text-xs font-bold uppercase tracking-widest mb-6 mt-6">
@@ -76,7 +71,7 @@ const HeroSection = () => {
                             Découvrir son âme
                         </button>
                     </div>
-                </motion.div>
+                </div>
 
                 {/* Image du produit avec animation de flottaison */}
                 <div
