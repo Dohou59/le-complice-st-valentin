@@ -57,7 +57,7 @@ export function CartDrawer() {
                                         <div className="flex-1 flex flex-col justify-between">
                                             <div>
                                                 <h4 className="font-serif font-bold text-[#3C3C3C]">{item.name}</h4>
-                                                <p className="text-[#DC143C] font-bold">{item.price.toFixed(2)}€</p>
+                                                <p className="text-[#DC143C] font-bold">{item.price.toLocaleString('fr-FR')} FCFA</p>
                                             </div>
                                             <div className="flex items-center justify-between mt-2">
                                                 <div className="flex items-center gap-2 bg-gray-50 rounded-lg p-1">
@@ -84,7 +84,7 @@ export function CartDrawer() {
                         <div className="w-full space-y-4">
                             <div className="flex items-center justify-between text-lg font-bold text-[#3C3C3C]">
                                 <span>Total</span>
-                                <span>{total.toFixed(2)}€</span>
+                                <span>{total.toLocaleString('fr-FR')} FCFA</span>
                             </div>
                             <Button
                                 className="w-full bg-gradient-to-r from-[#DC143C] to-[#FF1493] text-white py-6 rounded-xl text-lg font-bold shadow-lg hover:shadow-xl transition-all"

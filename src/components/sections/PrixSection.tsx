@@ -131,8 +131,8 @@ const PrixSection = () => {
 
                     {/* SECTION PRIX COMPACTE */}
                     <div className="flex items-baseline gap-4 mb-8">
-                        <span className="text-5xl font-bold text-[#DC143C]">24.90€</span>
-                        <span className="text-2xl text-gray-300 line-through font-light">39.90€</span>
+                        <span className="text-4xl lg:text-5xl font-bold text-[#DC143C]">15 000 <span className="text-2xl">FCFA</span></span>
+                        <span className="text-xl text-gray-300 line-through font-light">25 000 FCFA</span>
                     </div>
 
                     {/* BOUTON D'ACTION AJUSTÉ */}
@@ -143,7 +143,7 @@ const PrixSection = () => {
                             addToCart({
                                 id: 'pack-serenite',
                                 name: 'Le Pack Sérénité',
-                                price: 24.90,
+                                price: 15000,
                                 quantity: 1,
                                 image: "/images/hero-peluche.webp"
                             });
