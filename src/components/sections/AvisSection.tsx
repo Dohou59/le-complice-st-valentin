@@ -53,7 +53,7 @@ const cards = testimonialData.ids.map((cardId: string, index: number) => {
 
 export default function AvisSection() {
     return (
-        <section className="relative bg-[#F5F5F5]">
+        <section id="temoignages" className="relative bg-[#F5F5F5]">
             <WaveDivider color="#F5F5F5" className="absolute top-0 left-0 -translate-y-full" />
             <div className="py-24">
                 <div className="container mx-auto px-6 text-center">

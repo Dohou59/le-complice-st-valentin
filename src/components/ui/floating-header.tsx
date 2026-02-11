@@ -15,11 +15,11 @@ export function FloatingHeader() {
     const links = [
         {
             label: 'L\'Histoire',
-            href: '#histoire',
+            href: '#pourquoi',
         },
         {
             label: 'Le Cadeau',
-            href: '#cadeau',
+            href: '#presentation',
         },
         {
             label: 'Témoignages',
@@ -70,24 +70,23 @@ export function FloatingHeader() {
 
                 {/* CTA + Mobile Menu */}
                 <div className="flex items-center gap-2">
+                    <a
+                        href="#presentation"
+                        className="hidden sm:inline-flex items-center justify-center px-4 py-2 text-sm font-bold text-[#DC143C] bg-pink-50 rounded-full hover:bg-pink-100 transition-colors mr-2"
+                    >
+                        Découvrir
+                    </a>
                     <button
                         onClick={() => setIsOpen(true)}
-                        className="relative p-2 rounded-full hover:bg-pink-50 transition-colors mr-1"
+                        className="relative p-2 rounded-full hover:bg-pink-50 hover:scale-125 transition-all duration-200 mr-1"
                     >
-                        <ShoppingBag className="w-5 h-5 text-gray-700" />
+                        <Image src="/icons/pannier.png" alt="Panier" width={24} height={24} className="object-contain" />
                         {cartCount > 0 && (
                             <span className="absolute top-0 right-0 w-4 h-4 bg-[#DC143C] text-white text-[10px] font-bold flex items-center justify-center rounded-full">
                                 {cartCount}
                             </span>
                         )}
                     </button>
-
-                    <Button
-                        className="h-9 px-3 bg-gradient-to-r from-[#DC143C] to-[#FF1493] text-white hover:shadow-lg hover:scale-105 transition-all duration-200"
-                        onClick={() => setIsOpen(true)}
-                    >
-                        Mon Panier
-                    </Button>
                     <Sheet open={open} onOpenChange={setOpen}>
                         <Button
                             variant="outline"
@@ -116,9 +115,13 @@ export function FloatingHeader() {
                                 ))}
                             </div>
                             <SheetFooter>
-                                <Button className="bg-gradient-to-r from-[#DC143C] to-[#FF1493] text-white w-full">
+                                <a
+                                    href="#offre"
+                                    className="flex items-center justify-center h-10 px-4 py-2 rounded-md bg-gradient-to-r from-[#DC143C] to-[#FF1493] text-white w-full text-sm font-medium hover:bg-pink-600 transition-colors"
+                                    onClick={() => setOpen(false)}
+                                >
                                     Commander pour le 14
-                                </Button>
+                                </a>
                             </SheetFooter>
                         </SheetContent>
                     </Sheet>

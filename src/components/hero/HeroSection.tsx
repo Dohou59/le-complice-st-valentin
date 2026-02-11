@@ -55,21 +55,19 @@ const HeroSection = () => {
 
                     {/* BOUTONS DESKTOP (Masqués sur mobile) */}
                     <div className="hidden lg:flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <motion.button
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                            animate={{
-                                boxShadow: ["0px 0px 0px rgba(220, 20, 60, 0)", "0px 10px 30px rgba(220, 20, 60, 0.3)", "0px 0px 0px rgba(220, 20, 60, 0)"]
-                            }}
-                            transition={{ duration: 2, repeat: Infinity }}
-                            className="bg-[#DC143C] text-white px-10 py-5 rounded-full text-lg font-bold shadow-lg"
+                        <a
+                            href="#offre"
+                            className="bg-[#DC143C] text-white px-10 py-5 rounded-full text-lg font-bold shadow-lg hover:shadow-[0_10px_30px_rgba(220,20,60,0.3)] transition-all hover:scale-105 inline-block text-center"
                         >
                             Offrir une présence
-                        </motion.button>
+                        </a>
 
-                        <button className="border-2 border-pink-100 text-[#FF1493] px-10 py-5 rounded-full text-lg font-bold hover:bg-pink-50 transition-colors">
+                        <a
+                            href="#presentation"
+                            className="border-2 border-pink-100 text-[#FF1493] px-10 py-5 rounded-full text-lg font-bold hover:bg-pink-50 transition-colors inline-block text-center"
+                        >
                             Découvrir son âme
-                        </button>
+                        </a>
                     </div>
                 </div>
 
@@ -113,20 +111,19 @@ const HeroSection = () => {
 
                 {/* BOUTONS MOBILE (Visibles uniquement sur mobile, Order 3) */}
                 <div className="flex lg:hidden flex-col w-full gap-4 order-3 items-center">
-                    <motion.button
-                        whileTap={{ scale: 0.95 }}
-                        animate={{
-                            boxShadow: ["0px 0px 0px rgba(220, 20, 60, 0)", "0px 10px 30px rgba(220, 20, 60, 0.3)", "0px 0px 0px rgba(220, 20, 60, 0)"]
-                        }}
-                        transition={{ duration: 2, repeat: Infinity }}
-                        className="bg-[#DC143C] text-white px-8 py-4 rounded-full text-lg font-bold shadow-lg w-full max-w-sm"
+                    <a
+                        href="#offre"
+                        className="bg-[#DC143C] text-white px-8 py-4 rounded-full text-lg font-bold shadow-lg w-full max-w-sm text-center transform active:scale-95 transition-all animate-[pulse_2s_infinite]"
                     >
                         Offrir une présence
-                    </motion.button>
+                    </a>
 
-                    <button className="border-2 border-pink-100 text-[#FF1493] px-8 py-4 rounded-full text-lg font-bold hover:bg-pink-50 transition-colors w-full max-w-sm">
+                    <a
+                        href="#presentation"
+                        className="border-2 border-pink-100 text-[#FF1493] px-8 py-4 rounded-full text-lg font-bold hover:bg-pink-50 transition-colors w-full max-w-sm text-center"
+                    >
                         Découvrir son âme
-                    </button>
+                    </a>
                 </div>
 
             </div>

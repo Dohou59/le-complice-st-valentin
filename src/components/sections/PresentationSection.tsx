@@ -43,7 +43,7 @@ const PresentationSection = () => {
     ];
 
     return (
-        <section className="py-24 bg-white overflow-hidden">
+        <section id="presentation" className="py-24 bg-white overflow-hidden">
             <div className="container mx-auto px-6">
 
                 {/* Titre de section style Magazine */}
