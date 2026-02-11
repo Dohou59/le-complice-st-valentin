@@ -6,6 +6,7 @@ import { useCart } from '@/context/CartContext';
 import { Sheet, SheetContent, SheetFooter } from '@/components/ui/sheet';
 import { Button, buttonVariants } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
+import Image from 'next/image';
 
 export function FloatingHeader() {
     const [open, setOpen] = React.useState(false);
@@ -38,8 +39,8 @@ export function FloatingHeader() {
             <nav className="mx-auto flex items-center justify-between p-2">
                 {/* Logo */}
                 <div className="hover:bg-pink-50/50 flex cursor-pointer items-center gap-2 rounded-xl px-3 py-2 duration-200 transition-all hover:scale-105">
-                    <div className="w-5 h-5">
-                        <img src="/icons/Coeur ruban.webp" alt="Le Complice" className="w-full h-full object-contain" />
+                    <div className="w-5 h-5 relative">
+                        <Image src="/icons/Coeur ruban.webp" alt="Le Complice" width={20} height={20} className="object-contain" />
                     </div>
                     <p className="text-base font-bold italic" style={{ fontFamily: 'Times New Roman, serif', letterSpacing: '0.05em' }}>
                         Le Complice

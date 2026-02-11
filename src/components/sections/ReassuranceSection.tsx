@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 
 export default function ReassuranceSection() {
     return (
@@ -13,8 +14,8 @@ export default function ReassuranceSection() {
                     { l: "PRÊT À OFFRIR", i: "/icons/Cadeau.webp" }
                 ].map((r, i) => (
                     <div key={i} className="flex flex-col items-center group cursor-default">
-                        <div className="w-16 h-16 mb-4 group-hover:scale-110 transition-transform duration-300">
-                            <img src={r.i} alt={r.l} className="w-full h-full object-contain" />
+                        <div className="w-16 h-16 mb-4 group-hover:scale-110 transition-transform duration-300 relative">
+                            <Image src={r.i} alt={r.l} width={64} height={64} className="w-full h-full object-contain" />
                         </div>
                         <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-gray-400 group-hover:text-[#DC143C] transition-colors">{r.l}</span>
                     </div>

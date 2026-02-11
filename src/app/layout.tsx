@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 };
 
 import { CartProvider } from "@/context/CartContext";
-import { CartDrawer } from "@/components/cart/CartDrawer";
+import { LazyCartDrawer } from "@/components/cart/LazyCartDrawer";
 
 export default function RootLayout({
   children,
@@ -37,7 +37,7 @@ export default function RootLayout({
       >
         <CartProvider>
           {children}
-          <CartDrawer />
+          <LazyCartDrawer />
         </CartProvider>
       </body>
     </html>

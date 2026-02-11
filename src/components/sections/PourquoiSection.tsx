@@ -5,8 +5,6 @@ import { motion } from 'framer-motion';
 import WaveDivider from '@/components/ui/WaveDivider';
 import Image from 'next/image';
 
-const pelucheSrc = "https://i.ibb.co/W4Jjzrsx/A-premium-soft-202602080759-removebg-preview.png";
-
 export default function PourquoiSection() {
     return (
         <section id="pourquoi" className="relative bg-[#F5F5F5] py-24 z-10">

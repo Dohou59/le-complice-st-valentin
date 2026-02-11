@@ -2,8 +2,10 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import ChatBubbles from '@/components/ui/ChatBubbles';
+import dynamic from 'next/dynamic';
 import Image from 'next/image';
+
+const ChatBubbles = dynamic(() => import('@/components/ui/ChatBubbles'), { ssr: false });
 
 /**
  * HeroSection Component
@@ -77,11 +79,7 @@ const HeroSection = () => {
                 </motion.div>
 
                 {/* Image du produit avec animation de flottaison */}
-                <motion.div
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 1, ease: "easeOut" }}
+                <div
                     className="order-2 lg:order-2 flex justify-center relative"
                 >
                     {/* Lueur subtile derrière l'image */}
@@ -102,6 +100,7 @@ const HeroSection = () => {
                             width={500}
                             height={500}
                             priority
+                            sizes="(max-width: 1024px) 100vw, 50vw"
                             className="w-full h-auto drop-shadow-[0_35px_35px_rgba(255,20,147,0.25)]"
                         />
                     </motion.div>
@@ -115,7 +114,7 @@ const HeroSection = () => {
                     >
                         <ChatBubbles />
                     </motion.div>
-                </motion.div>
+                </div>
 
                 {/* BOUTONS MOBILE (Visibles uniquement sur mobile, Order 3) */}
                 <div className="flex lg:hidden flex-col w-full gap-4 order-3 items-center">
